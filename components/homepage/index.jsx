@@ -9,7 +9,7 @@ function HomePage() {
     <div>
       <Main></Main>
       <CardsFour />
-      {/* <ThreeCards /> */}
+      <ThreeCards />
       <Aboutme />
       <Bytop to="/" />
     </div>

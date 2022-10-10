@@ -2,6 +2,11 @@ import styles from "./three.module.scss";
 import { BsArrowRight } from "react-icons/bs";
 import ReadMore from "../readmore";
 import Link from "next/link";
+import Image from "next/image";
+import three1 from "../../public/three1.png";
+import three2 from "../../public/three2.png";
+import three3 from "../../public/three3.png";
+
 function ThreeCards() {
   let threeinfos = [
     {
@@ -30,21 +35,28 @@ function ThreeCards() {
           <div className={styles.cardst}>
             {threeinfos.map((item, index) => {
               return (
-                <Link
-                  href={`/portfolios/${item.link}`}
-                  key={index}
-                  className={styles.cardt}
-                >
-                  <a>
-                    <div className={styles.topt}>
-                      <img src={item.img} alt="" />
-                    </div>
-                    <div className={styles.bottomt}>
-                      <div className={styles.company}>{item.company}</div>
-                      <div className={styles.job}>{item.job}</div>
-                    </div>
-                  </a>
-                </Link>
+                <div key={index} className={styles.cardt}>
+                  <Link
+                    href={`/portfolios/${item.link}`}
+                    className={styles.cardt}
+                  >
+                    <a>
+                      <div className={styles.topt}>
+                        <img
+                          src={item.img}
+                          alt="pet"
+                          width={480}
+                          height={270}
+                          layout="fill"
+                        />
+                      </div>
+                      <div className={styles.bottomt}>
+                        <div className={styles.company}>{item.company}</div>
+                        <div className={styles.job}>{item.job}</div>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
               );
             })}
           </div>

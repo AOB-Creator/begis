@@ -10,7 +10,7 @@ function About() {
         <h3>Обо мне</h3>
         <div className={styles.topside}>
           <div className={styles.lefttop}>
-            <img src="./aboutme.png" alt="" />
+            <img src="./aboutme.png" alt="sd" />
           </div>
           <div className={styles.righttop}>
             <p>
