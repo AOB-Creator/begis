@@ -3,9 +3,6 @@ import { BsArrowRight } from "react-icons/bs";
 import ReadMore from "../readmore";
 import Link from "next/link";
 import Image from "next/image";
-import three1 from "../../public/three1.png";
-import three2 from "../../public/three2.png";
-import three3 from "../../public/three3.png";
 
 function ThreeCards() {
   let threeinfos = [
@@ -60,7 +57,11 @@ function ThreeCards() {
               );
             })}
           </div>
-          <ReadMore context="Все работы" />
+          <Link href={"/portfolio"}>
+            <a>
+              <ReadMore context="Все работы" />
+            </a>
+          </Link>
         </div>
       </div>
     </div>

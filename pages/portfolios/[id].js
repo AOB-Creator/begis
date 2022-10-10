@@ -3,6 +3,8 @@ import Cardsproject from "../../components/cardsproject";
 import Map from "../../components/map/index";
 import Projects from "../../components/projectsabout";
 import Bytop from "../../components/bytop/index";
+import TopText from "../../components/toptext";
+
 function Ports() {
   let port = useRouter();
 
@@ -20,8 +22,7 @@ function Ports() {
         "./greentea/image 5.png",
         "./greentea/image 6.png",
       ],
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit semper interdum fusce mauris vitae et et. Tristique mi quisque et morbi gravida maecenas. Ligula volutpat lacus nunc, fermentum massa. Tincidunt velit augue mauris, placerat nulla pellentesque integer at. Ligula volutpat lacus nunc, fermentum massa. Tincidunt velit augue mauris, placerat nulla pellentesque integer at.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       img: "three2.png",
@@ -36,8 +37,7 @@ function Ports() {
         "./steady/steady 5.png",
         "./steady/steady 6.png",
       ],
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit semper interdum fusce mauris vitae et et. Tristique mi quisque et morbi gravida maecenas. Ligula volutpat lacus nunc, fermentum massa. Tincidunt velit augue mauris, placerat nulla pellentesque integer at. Ligula volutpat lacus nunc, fermentum massa. Tincidunt velit augue mauris, placerat nulla pellentesque integer at.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       img: "three3.png",
@@ -52,8 +52,39 @@ function Ports() {
         "./greendrugs/image 5.png",
         "./greendrugs/image 6.png",
       ],
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit semper interdum fusce mauris vitae et et. Tristique mi quisque et morbi gravida maecenas. Ligula volutpat lacus nunc, fermentum massa. Tincidunt velit augue mauris, placerat nulla pellentesque integer at. Ligula volutpat lacus nunc, fermentum massa. Tincidunt velit augue mauris, placerat nulla pellentesque integer at.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      img: "./Ami/image 1.png",
+      company: "Ami",
+      job: "SMM Designs",
+      link: "ami",
+      imgs: ["./Ami/image 2.png"],
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      img: "./datanimate/image 1.png",
+      company: "Datanimate",
+      job: "SMM Designs",
+      link: "datanimate",
+      imgs: ["./datanimate/image 2.png"],
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      img: "./audiobook/image 1.png",
+      company: "Audiobook",
+      job: "SMM Designs",
+      link: "audiobook",
+      imgs: ["./audiobook/image 2.png", "./audiobook/image 3.png"],
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      img: "./bizler/image 1.png",
+      company: "Bizler Group",
+      job: "SMM Designs",
+      link: "bizler",
+      imgs: ["./bizler/image 1.png"],
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
 
@@ -70,7 +101,8 @@ function Ports() {
           if (item.link == port.query.id) {
             return (
               <div key={index}>
-                <Projects img={item.img} descr={item.description} />
+                <TopText text={item.description} title={item.company} />
+                {/* <Projects img={item.img} descr={item.description} /> */}
                 <Cardsproject data={item} key={index} />;
                 <Bytop to={`${item.link}`} />
               </div>

@@ -7,7 +7,7 @@
 .aboutpage {
   .about {
     padding: 30px 0;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     .aboutleft {
       flex: 2;
@@ -21,6 +21,7 @@
       p {
         width: 80%;
         font-size: 18px;
+        line-height: 1.4em;
       }
     }
     .aboutright {

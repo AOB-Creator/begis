@@ -6,6 +6,7 @@
 .footer {
   background-color: black;
   .footpage {
+    padding: 10px 0;
     height: 15vh;
     display: flex;
     align-items: center;
@@ -13,20 +14,21 @@
     color: white;
     .leftfoot {
       div {
-        font-size: 20px;
+        font-size: 18px;
+        padding-bottom: 15px;
       }
       .socials {
         padding: 5px 0;
         a {
           margin-right: 15px;
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }
     .rightfoot {
       a {
-        font-size: 20px;
-        margin-left: 20px;
+        font-size: 16px;
+        margin-left: 25px;
       }
     }
   }

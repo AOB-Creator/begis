@@ -1,5 +1,6 @@
 import ReadMore from "../readmore";
 import styles from "./about.module.scss";
+import Link from "next/link";
 
 function Aboutme() {
   return (
@@ -19,7 +20,11 @@ function Aboutme() {
               инициированные исключительно синтетически, функционально разнесены
               на независимые элементы!
             </p>
-            <ReadMore context="Читать полностью" />
+            <Link href="/about">
+              <a>
+                <ReadMore context="Читать полностью" />
+              </a>
+            </Link>
           </div>
           <div className={styles.aboutright}>
             <img src="./begis.png" alt="" />
