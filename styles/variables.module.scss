@@ -1,33 +1,3 @@
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@1,700&display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-.container {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  /* html {
-    color-scheme: dark;
-  } */
-  /* body {
-    color: white;
-    background: black; */
-  /* } */
-}
+$fontfp: "Poppins", sans-serif;

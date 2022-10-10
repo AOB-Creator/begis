@@ -1,0 +1,114 @@
+.aboutpage {
+  height: auto;
+  width: 95%;
+  max-width: 900px;
+
+  margin: 0 auto;
+  h3 {
+    color: #007fef;
+    font-size: 25px;
+    position: relative;
+    font-weight: 700;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 70px;
+      left: -100px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #007fef;
+    }
+  }
+  .topside {
+    height: 230px;
+    display: flex;
+
+    .lefttop {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .righttop {
+      flex: 3;
+      padding-left: 30px;
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .bottext {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 800px) and (min-width: 551px) {
+  .topside {
+    .lefttop {
+      flex: 1.5 !important;
+    }
+    .righttop {
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
+  .bottext {
+    p {
+      font-size: 15px !important;
+    }
+  }
+}
+
+@media (max-width: 550px) and (min-width: 471px) {
+  .topside {
+    height: 200px !important;
+    .lefttop {
+      flex: 1.5 !important;
+    }
+    .righttop {
+      flex: 3.5 !important;
+      p {
+        font-size: 13px !important;
+      }
+    }
+  }
+  .bottext {
+    p {
+      font-size: 13px !important;
+    }
+  }
+}
+
+@media (max-width: 470px) and (min-width: 271px) {
+  .topside {
+    height: 500px !important;
+    // height: auto !important;
+    flex-direction: column;
+    .lefttop {
+      height: 200px !important;
+      flex: 1 !important;
+      img {
+      }
+    }
+    .righttop {
+      padding-left: 0 !important;
+      flex: 0 !important;
+      p {
+        font-size: 13px !important;
+      }
+    }
+  }
+  .bottext {
+    p {
+      font-size: 13px !important;
+    }
+  }
+}

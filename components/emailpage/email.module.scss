@@ -1,0 +1,92 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.email {
+  height: 65vh;
+  .text {
+    font-size: 28px;
+    color: #007fef;
+    font-weight: 600;
+    margin-left: 50px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 40px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      background-color: #007fef;
+    }
+  }
+  .contacts {
+    height: 57vh;
+    display: flex;
+    padding: 30px 0;
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      .linkpage {
+        margin-top: 30px;
+        div {
+          font-size: 16px;
+          font-weight: 300;
+          color: rgb(75, 75, 75);
+          margin: 5px 0;
+        }
+        a {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      a {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  .contacts {
+    height: auto !important;
+  }
+  .left {
+    .linkpage {
+      margin-top: 30px;
+      div {
+        font-size: 14px !important;
+      }
+      a {
+        font-size: 16px !important;
+      }
+    }
+  }
+  .email {
+    .text {
+      font-size: 20px;
+      padding: 20px 0;
+    }
+  }
+  .right {
+    align-items: center !important;
+    a {
+      margin-top: 10px;
+      font-size: 15px !important;
+    }
+  }
+}

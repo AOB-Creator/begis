@@ -1,0 +1,93 @@
+@use "../../styles/variables.module.scss" as *;
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.cardsthree {
+  padding: 30px 0;
+  .three {
+    height: 50vh;
+    .cardst {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 30px;
+      column-gap: 30px;
+
+      .cardt {
+        height: auto;
+        box-shadow: 0px 0px 10px rgb(157, 157, 157);
+        border-radius: 10px;
+        overflow: hidden;
+        .topt {
+          height: 250px;
+          background-color: saddlebrown;
+          position: relative;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .bottomt {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 10px;
+          .company {
+            font-size: 20px;
+            font-weight: 400;
+          }
+          .job {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $fontfp;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) and (min-width: 501px) {
+  .three {
+    height: auto !important;
+
+    .cardst {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .bottomt {
+      .company {
+        font-size: 16px !important;
+      }
+      .job {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) and (min-width: 300px) {
+  .three {
+    height: auto !important;
+
+    .cardst {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .bottomt {
+      .company {
+        font-size: 16px !important;
+      }
+      .job {
+        font-size: 14px;
+      }
+    }
+  }
+}
