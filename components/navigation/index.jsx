@@ -2,12 +2,18 @@ import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { GrMenu } from "react-icons/gr";
 import { AiOutlineMenu } from "react-icons/ai";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
   let [open, setopen] = useState(true);
-  let path = window.location.pathname.slice(1, window.location.pathname.length);
-  let [text, settext] = useState(path);
+  let [text, settext] = useState("");
+  useEffect(() => {
+    let path = window.location.pathname.slice(
+      1,
+      window.location.pathname.length
+    );
+    settext(path);
+  }, []);
 
   return (
     <>

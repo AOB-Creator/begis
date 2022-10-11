@@ -5,7 +5,6 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function CardsFour() {
-  AOS.init();
   let cardsinfo = [
     {
       type: "UX/UI Design",
