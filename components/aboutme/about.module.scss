@@ -9,14 +9,17 @@
     padding: 30px 0;
     height: 60vh;
     display: flex;
+    p {
+      background-color: darkblue;
+    }
     .aboutleft {
       flex: 2;
       //   background-color: darkblue;
       padding: 20px 10px;
       .title {
-        font-weight: 600;
-        color: #007fef;
-        font-size: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        // color: #007fef;
       }
       p {
         width: 80%;
