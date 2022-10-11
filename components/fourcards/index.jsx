@@ -2,8 +2,10 @@ import styles from "./cards.module.scss";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function CardsFour() {
+  AOS.init();
   let cardsinfo = [
     {
       type: "UX/UI Design",
@@ -47,7 +49,11 @@ function CardsFour() {
           {cardsinfo.map((item, index) => {
             return (
               <div key={index}>
-                <Link href={`portfolios/${item.link}`}>
+                <Link
+                  href={`portfolios/${item.link}`}
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-center"
+                >
                   <a>
                     <div className={styles.card}>
                       <div className={styles.cardtop}>

@@ -5,7 +5,9 @@ function EmailPage() {
   return (
     <div className={styles.email}>
       <div className={styles.container}>
-        <div className={styles.text}>Контакты</div>
+        <div className={styles.text}>
+          <span> Контакты</span>
+        </div>
         <div className={styles.contacts}>
           <div className={styles.left}>
             <div className={styles.linkpage}>

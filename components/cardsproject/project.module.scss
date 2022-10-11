@@ -27,9 +27,12 @@
 }
 
 @media (max-width: 900px) and (min-width: 701px) {
-  .card {
-    height: 290px !important;
-    position: relative;
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      height: 290px !important;
+      position: relative;
+    }
   }
 }
 

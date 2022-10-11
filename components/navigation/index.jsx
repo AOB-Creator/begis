@@ -1,19 +1,29 @@
 import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { GrMenu } from "react-icons/gr";
+import { AiOutlineMenu } from "react-icons/ai";
 import { useRef, useState } from "react";
 
 export default function Navbar() {
   let [open, setopen] = useState(true);
-  // let path = window.location.pathname.slice(1, window.location.pathname.length);
-  let [text, settext] = useState("no");
+  let path = window.location.pathname.slice(1, window.location.pathname.length);
+  let [text, settext] = useState(path);
 
   return (
     <>
-      <div className={styles.navbar}>
+      <div
+        className={
+          open ? `${styles.navbar}` : `${styles.navbar} ${styles.dark}`
+        }
+      >
         <div className={styles.container}>
           <div className={styles.navpage}>
-            <div className={styles.logo}>
+            <div
+              className={styles.logo}
+              onClick={() => {
+                settext("ok");
+              }}
+            >
               <Link href={"/"}>
                 <a className={styles.navtext1}>Begis</a>
               </Link>
@@ -27,7 +37,7 @@ export default function Navbar() {
                 setopen(!open);
               }}
             >
-              <GrMenu />
+              <AiOutlineMenu className={styles.menuicons1} />
             </div>
             <ul
               className={
