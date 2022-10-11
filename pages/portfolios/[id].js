@@ -14,6 +14,7 @@ function Ports() {
       company: "Зеленый чай",
       job: "SMM Designs",
       link: "greentea",
+      img1: [],
       imgs: [
         "./greentea/image 1.png",
         "./greentea/image 2.png",
@@ -29,6 +30,7 @@ function Ports() {
       company: "Steady LC",
       job: "SMM Designs",
       link: "steady",
+      img1: [],
       imgs: [
         "./steady/steady 1.png",
         "./steady/steady 2.png",
@@ -44,6 +46,7 @@ function Ports() {
       company: "Зеленая аптека",
       job: "SMM Designs",
       link: "greendrugs",
+      img1: [],
       imgs: [
         "./greendrugs/image 1.png",
         "./greendrugs/image 2.png",
@@ -59,7 +62,8 @@ function Ports() {
       company: "Ami",
       job: "SMM Designs",
       link: "ami",
-      imgs: ["./Ami/image 2.png"],
+      img1: ["./Ami/image 1.png", "./Ami/image 2.png"],
+      imgs: [],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
@@ -67,7 +71,8 @@ function Ports() {
       company: "Datanimate",
       job: "SMM Designs",
       link: "datanimate",
-      imgs: ["./datanimate/image 2.png"],
+      img1: ["./datanimate/image 2.png"],
+      imgs: [],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
@@ -75,7 +80,12 @@ function Ports() {
       company: "Audiobook",
       job: "SMM Designs",
       link: "audiobook",
-      imgs: ["./audiobook/image 2.png", "./audiobook/image 3.png"],
+      img1: [
+        "./audiobook/image 2.png",
+        "./audiobook/image 1.png",
+        "./audiobook/image 3.png",
+      ],
+      imgs: [],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
@@ -83,7 +93,8 @@ function Ports() {
       company: "Bizler Group",
       job: "SMM Designs",
       link: "bizler",
-      imgs: ["./bizler/image 1.png"],
+      img1: ["./bizler/image 1.png"],
+      imgs: [],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
@@ -91,7 +102,7 @@ function Ports() {
   return (
     <div>
       <Map
-        to={`/portfolios/${port.query.id}`}
+        to={`portfolios/${port.query.id}`}
         number={3}
         text={port.query.id}
       ></Map>

@@ -2,7 +2,7 @@ import styles from "./project.module.scss";
 
 function Cardsproject(props) {
   let {
-    data: { img, imgs },
+    data: { img1, imgs },
   } = props;
 
   return (
@@ -10,7 +10,13 @@ function Cardsproject(props) {
       <div className={styles.container}>
         <div>
           <div className={styles.imagespage}>
-            {/* <img src={`../${img}`} alt="" /> */}
+            {img1.map((item, index) => {
+              return (
+                <div className={styles.imga} key={index}>
+                  <img src={`../${item}`} alt="" />
+                </div>
+              );
+            })}
           </div>
           <div className={styles.cards}>
             {imgs.map((item, index) => {

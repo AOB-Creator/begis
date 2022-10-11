@@ -4,7 +4,7 @@ import { GrMenu } from "react-icons/gr";
 import { useRef, useState } from "react";
 
 export default function Navbar() {
-  let [open, setopen] = useState(false);
+  let [open, setopen] = useState(true);
   // let path = window.location.pathname.slice(1, window.location.pathname.length);
   let [text, settext] = useState("no");
 

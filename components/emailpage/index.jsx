@@ -14,7 +14,7 @@ function EmailPage() {
             </div>
             <div className={styles.linkpage}>
               <div>Telegram:</div>
-              <Link href={"https//t.m/@begys"}>@begys</Link>
+              <Link href={"https://t.me/begys"}>@begys</Link>
             </div>
             <div className={styles.linkpage}>
               <div>Телефон:</div>

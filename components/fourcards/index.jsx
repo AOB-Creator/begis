@@ -46,8 +46,8 @@ function CardsFour() {
         <div className={styles.cardspart}>
           {cardsinfo.map((item, index) => {
             return (
-              <>
-                <Link href={`/portfolios/${item.link}`} key={index}>
+              <div key={index}>
+                <Link href={`portfolios/${item.link}`}>
                   <a>
                     <div className={styles.card}>
                       <div className={styles.cardtop}>
@@ -65,7 +65,7 @@ function CardsFour() {
                     </div>
                   </a>
                 </Link>
-              </>
+              </div>
             );
           })}
         </div>
